@@ -1306,7 +1306,7 @@ a.full_link {
     width: 34px;
     height: 34px;
     display: block;
-    border: 2px solid rgba(255, 0, 247, 0.561);
+    border: 2px solid rgba(201, 17, 195, 0.561);
     position: relative;
     border-radius: 100%;
     background-color: rgba(255, 255, 255, .05);
@@ -1317,7 +1317,7 @@ a.full_link {
     position: absolute;
     width: 12px;
     height: 12px;
-    color: rgba(255, 0, 247, 0.43);
+    color: rgba(201, 17, 195, 0.561);
     top: 50%;
     left: 50%;
     margin: -6px 0 0 -6px;
