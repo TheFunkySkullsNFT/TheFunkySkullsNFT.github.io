@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 /*
-/*	Copyright (c) 2022 Frenify
-/*	Author: Frenify
+/*	Copyright (c) 2022 T.W
+/*	Author: T.W
 /*	This file is made for CURRENT TEMPLATE
 /*
 
@@ -10,7 +10,7 @@
 	List of CSS codes:
 
 	01) Base
- 
+
 
 /*------------------------------------------------------------------*/
 
@@ -782,8 +782,6 @@ a.full_link {
 
 .social a:hover {
     color: var(--mc1);
-    transition: all 1s ease;
-    box-shadow: 0px 5px 70px rgba(251, 0, 255, 0.371);
 }
 
 
@@ -1062,7 +1060,7 @@ a.full_link {
 
 .header .nav {
     opacity: 0;
-    padding-right: 70px !important;
+    padding-right: 0px;
 }
 
 .header .trigger_logo {
@@ -1269,8 +1267,8 @@ a.full_link {
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     background-size: 300% 300%;
-    -webkit-animation: animatedgradient 2000ms ease alternate infinite;
-    animation: animatedgradient 2000ms ease alternate infinite;
+    -webkit-animation: animatedgradient 4s ease alternate infinite;
+    animation: animatedgradient 4s ease alternate infinite;
 }
 
 .fn_cs_slider .slider_nav a {
@@ -1298,18 +1296,24 @@ a.full_link {
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     background-size: 300% 300%;
-    -webkit-animation: animatedgradient 2000ms ease alternate infinite;
-    animation: animatedgradient 2000ms ease alternate infinite;
+    -webkit-animation: animatedgradient 4s ease alternate infinite;
+    animation: animatedgradient 4s ease alternate infinite;
 }
 
 .fn_cs_slider .slider_nav .icon {
     width: 34px;
     height: 34px;
     display: block;
-    border: 2px solid rgba(201, 17, 195, 0.561);
+    border: 2px solid;
     position: relative;
     border-radius: 100%;
-    background-color: rgba(255, 255, 255, .05);
+    color: linear-gradient(45deg, var(--mc1), var(--mc2), var(--mc1), var(--mc2)) border-box;
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    background-size: 300% 300%;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-animation: animatedgradient 4s ease alternate infinite;
+    animation: animatedgradient 4s ease alternate infinite;
 }
 
 .fn_cs_slider .slider_nav .fn__svg {
@@ -1317,11 +1321,17 @@ a.full_link {
     position: absolute;
     width: 12px;
     height: 12px;
-    color: rgba(201, 17, 195, 0.561);
     top: 50%;
     left: 50%;
     margin: -6px 0 0 -6px;
-    transition: all .5s ease;
+    background-color: rgba(255, 255, 255, .05);
+    color: linear-gradient(45deg, var(--mc1), var(--mc2), var(--mc1), var(--mc2)) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    background-size: 300% 300%;
+    -webkit-animation: animatedgradient 4s ease alternate infinite;
+    animation: animatedgradient 4s ease alternate infinite;
 }
 
 .fn_cs_slider .slider_nav .prev .fn__svg {
@@ -1343,11 +1353,10 @@ a.full_link {
     top: 0;
     left: 0;
     color: var(--mc1);
-    opacity: .15;
     border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0);
     box-shadow: 0px 5px 20px;
-    transition: all .5s ease;
+    transition: all .3s ease;
+    border: 2px --mc2;
 }
 
 .fn_cs_slider .slider_nav a:hover .icon:after {
@@ -1594,6 +1603,8 @@ a.full_link {
     justify-content: flex-end;
     -ms-align-items: center;
     align-items: center;
+    padding: 110px 0;
+
 }
 
 .fn_cs_about .left_part .img_in,
@@ -1623,24 +1634,19 @@ a.full_link {
 }
 
 .fn_cs_about_raffle .left_part_raffle .img_raffle {
-    width: 443px;
-    height: 492px;
-    margin-top: 20px;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 0, 247);
-    box-shadow: 0px 0px 70px rgb(255, 0, 208, 0.257) inset;
-    position: relative;
-    align-items: center;
-    object-fit: fill;
-    z-index: 5;
+  width: 542px;
+  max-width: 100%;
+  padding: 20px;
+  background-color: rgba(255,255,255,.05);
+  position: relative;
+  z-index: 5;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 0, 247);
+  box-shadow: 0px 0px 70px rgb(255, 0, 208, 0.257) inset;
 }
 
 .fn_cs_about_raffle .left_part_raffle .img_raffle img {
-    position: absolute;
     max-width: 100%;
-    height: 100%;
-    padding: 10px;
-    left: 0;
     transition: all ease 800ms;
     transform-style: preserve-3d;
     transform: perspective(1600px);
@@ -1648,61 +1654,61 @@ a.full_link {
 }
 
 .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.front13 {
-    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-150px) translateZ(-20px) translateX(500px) scale(.8);
+    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-150px) translateZ(-20px) translateX(500px) scale(.6);
 }
 
 .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back12 {
-    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-200px) translateZ(-370px) translateX(450px) scale(.8);
+    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-200px) translateZ(-370px) translateX(450px) scale(.6);
 }
 
 .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back11 {
-    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-250px) translateZ(-300px) translateX(400px) scale(.8);
+    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-250px) translateZ(-300px) translateX(400px) scale(.6);
 }
 
 .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back10 {
-    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-220px) translateZ(-50px) translateX(350px) scale(.8);
+    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-220px) translateZ(-50px) translateX(350px) scale(.6);
 }
 
 .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back9 {
-    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-140px) translateZ(-160px) translateX(300px) scale(.8);
+    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-140px) translateZ(-160px) translateX(300px) scale(.6);
 }
 
 .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back8 {
-    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-130px) translateZ(-170px) translateX(250px) scale(.8);
+    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-130px) translateZ(-170px) translateX(250px) scale(.6);
 }
 
 .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back7 {
-    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-150px) translateZ(-280px) translateX(200px) scale(.8);
+    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-150px) translateZ(-250px) translateX(200px) scale(.6);
 }
 
 .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back6 {
-    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-100px) translateZ(50px) translateX(150px) scale(.8);
+    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-100px) translateZ(50px) translateX(150px) scale(.6);
 }
 
 .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back5 {
-    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-90px) translateZ(-70px) translateX(100px) scale(.8);
+    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-90px) translateZ(-70px) translateX(100px) scale(.6);
 }
 
 .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back4 {
-    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-90px) translateZ(-100px) translateX(-20px) scale(.8);
+    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-90px) translateZ(-100px) translateX(-50px) scale(.8);
 }
 
 .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back3 {
-    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-50px) scale(.8);
+    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-100px) scale(.6);
 }
 
 .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back2 {
-    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-120px) scale(.8);
+    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-150px) scale(.6);
 }
 
 .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back1 {
-    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-200px) scale(.8);
+    transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-200px) scale(.6);
 }
 
 .fn_cs_about .left_part .bg_overlay,
 .fn_cs_about_raffle .left_part_raffle .bg_overlay_raffle {
     right: 130px;
-    box-shadow: 0px 0px 10px rgba(255, 0, 242, 0.463);
+    box-shadow: 0px 0px 10px rgb(134, 131, 131);
 }
 
 .fn_cs_about .left_part .bg_color,
@@ -1763,8 +1769,8 @@ a.full_link {
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     background-size: 300% 300%;
-    -webkit-animation: animatedgradient 2000ms ease alternate infinite;
-    animation: animatedgradient 2000ms ease alternate infinite;
+    -webkit-animation: animatedgradient 4s ease alternate infinite;
+    animation: animatedgradient 4s ease alternate infinite;
 }
 
 .fn_cs_divider .divider:after,
@@ -1781,8 +1787,8 @@ a.full_link {
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     background-size: 300% 300%;
-    -webkit-animation: animatedgradient 2000ms ease alternate infinite;
-    animation: animatedgradient 2000ms ease alternate infinite;
+    -webkit-animation: animatedgradient 4s ease alternate infinite;
+    animation: animatedgradient 4s ease alternate infinite;
 }
 
 .fn_cs_divider .divider:before {
@@ -1986,8 +1992,8 @@ a.metaportal_fn_videobutton:hover .fn__svg,
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     background-size: 300% 300%;
-    -webkit-animation: animatedgradient 2000ms ease alternate infinite;
-    animation: animatedgradient 2000ms ease alternate infinite;
+    -webkit-animation: animatedgradient 4s ease alternate infinite;
+    animation: animatedgradient 4s ease alternate infinite;
 }
 
 .fn_cs_section_divider .divider:before {
@@ -2011,8 +2017,8 @@ a.metaportal_fn_videobutton:hover .fn__svg,
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     background-size: 300% 300%;
-    -webkit-animation: animatedgradient 2000ms ease alternate infinite;
-    animation: animatedgradient 2000ms ease alternate infinite;
+    -webkit-animation: animatedgradient 4s ease alternate infinite;
+    animation: animatedgradient 4s ease alternate infinite;
 }
 
 .fn_cs_section_divider span:after {
@@ -2339,8 +2345,8 @@ a.metaportal_fn_videobutton:hover .fn__svg,
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     background-size: 300% 300%;
-    -webkit-animation: animatedgradient 2000ms ease alternate infinite;
-    animation: animatedgradient 2000ms ease alternate infinite;
+    -webkit-animation: animatedgradient 4s ease alternate infinite;
+    animation: animatedgradient 4s ease alternate infinite;
 }
 
 .metaportal_fn_search_closer {
@@ -2711,8 +2717,8 @@ a.metaportal_fn_videobutton:hover .fn__svg,
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
     background-size: 300% 300%;
-    -webkit-animation: animatedgradient 2000ms ease alternate infinite;
-    animation: animatedgradient 2000ms ease alternate infinite;
+    -webkit-animation: animatedgradient 4s ease alternate infinite;
+    animation: animatedgradient 4s ease alternate infinite;
 }
 
 .metaportal_fn_items .icon {
@@ -3041,30 +3047,6 @@ a.metaportal_fn_videobutton:hover .fn__svg,
     .fn_cs_contact_form ul {
         margin-left: -20px;
     }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle {
-        width: 443px;
-        height: 492px;
-        margin-top: 20px;
-        border-radius: 10px;
-        border: 1px solid rgba(255, 0, 247);
-        box-shadow: 0px 0px 70px rgb(255, 0, 208, 0.257) inset;
-        position: relative;
-        align-items: center;
-        object-fit: fill;
-        z-index: 5;
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle img {
-        position: absolute;
-        max-width: 100%;
-        height: 100%;
-        padding: 10px;
-        left: 0;
-        scale: .7;
-        transition: all ease 800ms;
-        transform-style: preserve-3d;
-        transform: perspective(1600px);
-        cursor: pointer;
-    }
 }
 
 @media(max-width: 1200px) {
@@ -3099,69 +3081,6 @@ a.metaportal_fn_videobutton:hover .fn__svg,
     }
     .fn_cs_contact_info li {
         width: 100%;
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle {
-        width: 443px;
-        height: 492px;
-        margin-top: 20px;
-        border-radius: 10px;
-        border: 1px solid rgba(255, 0, 247);
-        box-shadow: 0px 0px 70px rgb(255, 0, 208, 0.257) inset;
-        position: relative;
-        align-items: center;
-        object-fit: cover;
-        z-index: 5;
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle img {
-        position: absolute;
-        max-width: 100%;
-        height: 100%;
-        padding: 10px;
-        left: 0;
-        scale: .7;
-        transition: all ease 800ms;
-        transform-style: preserve-3d;
-        transform: perspective(1600px);
-        cursor: pointer;
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.front13 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-150px) translateZ(-20px) translateX(500px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back12 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-200px) translateZ(-370px) translateX(450px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back11 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-250px) translateZ(-300px) translateX(400px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back10 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-220px) translateZ(-50px) translateX(350px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back9 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-140px) translateZ(-160px) translateX(300px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back8 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-130px) translateZ(-170px) translateX(250px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back7 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-150px) translateZ(-280px) translateX(200px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back6 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-100px) translateZ(50px) translateX(150px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back5 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-90px) translateZ(-70px) translateX(100px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back4 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-90px) translateZ(-100px) translateX(-20px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back3 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-50px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back2 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-120px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back1 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-200px) scale(.3);
     }
 }
 
@@ -3254,136 +3173,9 @@ a.metaportal_fn_videobutton:hover .fn__svg,
     .fn_cs_about_raffle .right_in {
         max-width: 100%;
     }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle {
-        width: 443px;
-        height: 492px;
-        margin-top: 20px;
-        border-radius: 10px;
-        border: 1px solid rgba(255, 0, 247);
-        box-shadow: 0px 0px 70px rgb(255, 0, 208, 0.257) inset;
-        position: relative;
-        align-items: center;
-        object-fit: cover;
-        z-index: 5;
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle img {
-        position: absolute;
-        max-width: 100%;
-        height: 100%;
-        padding: 10px;
-        left: 0;
-        scale: .7;
-        transition: all ease 800ms;
-        transform-style: preserve-3d;
-        transform: perspective(1600px);
-        cursor: pointer;
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.front13 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-150px) translateZ(-20px) translateX(500px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back12 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-200px) translateZ(-370px) translateX(450px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back11 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-250px) translateZ(-300px) translateX(400px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back10 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-220px) translateZ(-50px) translateX(350px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back9 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-140px) translateZ(-160px) translateX(300px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back8 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-130px) translateZ(-170px) translateX(250px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back7 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-150px) translateZ(-280px) translateX(200px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back6 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-100px) translateZ(50px) translateX(150px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back5 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-90px) translateZ(-70px) translateX(100px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back4 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-90px) translateZ(-100px) translateX(-20px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back3 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-50px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back2 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-120px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back1 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-200px) scale(.3);
-    }
 }
 
-@media(max-width: 900px) {
-    .fn_cs_about_raffle .left_part_raffle .img_raffle {
-        width: 443px;
-        height: 492px;
-        margin-top: 20px;
-        border-radius: 10px;
-        border: 1px solid rgba(255, 0, 247);
-        box-shadow: 0px 0px 70px rgb(255, 0, 208, 0.257) inset;
-        position: relative;
-        align-items: center;
-        object-fit: cover;
-        z-index: 5;
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle img {
-        position: absolute;
-        max-width: 100%;
-        height: 100%;
-        padding: 10px;
-        left: 0;
-        scale: .6;
-        transition: all ease 800ms;
-        transform-style: preserve-3d;
-        transform: perspective(1600px);
-        cursor: pointer;
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.front13 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-150px) translateZ(-20px) translateX(500px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back12 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-200px) translateZ(-370px) translateX(450px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back11 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-250px) translateZ(-300px) translateX(400px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back10 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-220px) translateZ(-50px) translateX(350px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back9 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-140px) translateZ(-160px) translateX(300px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back8 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-130px) translateZ(-170px) translateX(250px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back7 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-150px) translateZ(-280px) translateX(200px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back6 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-100px) translateZ(50px) translateX(150px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back5 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-90px) translateZ(-70px) translateX(100px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back4 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-90px) translateZ(-100px) translateX(-20px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back3 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-50px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back2 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-120px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back1 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-200px) scale(.3);
-    }
-}
+@media(max-width: 900px) {}
 
 @media(max-width: 768px) {
     .fn_cs_collection .collection_top {
@@ -3459,144 +3251,14 @@ a.metaportal_fn_videobutton:hover .fn__svg,
     .metaportal_fn_button {
         padding: 0 24px;
     }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle {
-        width: 443px;
-        height: 492px;
-        margin-top: 20px;
-        border-radius: 10px;
-        border: 1px solid rgba(255, 0, 247);
-        box-shadow: 0px 0px 70px rgb(255, 0, 208, 0.257) inset;
-        position: relative;
-        align-items: center;
-        object-fit: cover;
-        z-index: 5;
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle img {
-        position: absolute;
-        max-width: 100%;
-        height: 100%;
-        padding: 10px;
-        left: 0;
-        scale: .6;
-        transition: all ease 800ms;
-        transform-style: preserve-3d;
-        transform: perspective(1600px);
-        cursor: pointer;
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.front13 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-150px) translateZ(-20px) translateX(500px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back12 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-200px) translateZ(-370px) translateX(450px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back11 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-250px) translateZ(-300px) translateX(400px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back10 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-220px) translateZ(-50px) translateX(350px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back9 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-140px) translateZ(-160px) translateX(300px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back8 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-130px) translateZ(-170px) translateX(250px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back7 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-150px) translateZ(-280px) translateX(200px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back6 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-100px) translateZ(50px) translateX(150px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back5 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-90px) translateZ(-70px) translateX(100px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back4 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-90px) translateZ(-100px) translateX(-20px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back3 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-50px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back2 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-120px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back1 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-200px) scale(.3);
-    }
 }
 
 @media(max-width: 480px) {
     .fn_cs_collection .item {
-        width: 100% !important
+        width: 100% !important;
     }
-}
-
-@media(max-width: 480px) {
-    .fn_cs_about_raffle .left_part_raffle .img_raffle {
-        width: 443px;
-        height: 492px;
-        margin-top: 20px;
-        border-radius: 10px;
-        border: 1px solid rgba(255, 0, 247);
-        box-shadow: 0px 0px 70px rgb(255, 0, 208, 0.257) inset;
-        position: relative;
-        align-items: center;
-        object-fit: cover;
-        z-index: 5;
+    .social a,
+    .social a:after {
+        font-size: 14px;
     }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle img {
-        position: absolute;
-        max-width: 100%;
-        height: 100%;
-        padding: 10px;
-        left: 0;
-        scale: .5;
-        transition: all ease 800ms;
-        transform-style: preserve-3d;
-        transform: perspective(1600px);
-        cursor: pointer;
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.front13 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-150px) translateZ(-20px) translateX(500px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back12 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-200px) translateZ(-370px) translateX(450px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back11 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-250px) translateZ(-300px) translateX(400px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back10 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-220px) translateZ(-50px) translateX(350px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back9 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-140px) translateZ(-160px) translateX(300px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back8 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-130px) translateZ(-170px) translateX(250px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back7 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-150px) translateZ(-280px) translateX(200px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back6 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-100px) translateZ(50px) translateX(150px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back5 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-90px) translateZ(-70px) translateX(100px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back4 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-90px) translateZ(-100px) translateX(-20px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back3 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-50px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back2 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-120px) scale(.3);
-    }
-    .fn_cs_about_raffle .left_part_raffle .img_raffle:hover img.back1 {
-        transform: perspective(1600px) rotateX(30deg) rotateY(30deg) rotateZ(-30deg) translateY(-50px) translateZ(0px) translateX(-200px) scale(.3);
-    }
-}
-
-.social a,
-.social a:after {
-    font-size: 14px;
 }
