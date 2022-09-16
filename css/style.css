@@ -1638,7 +1638,7 @@ a.full_link {
 .fn_cs_about_raffle .left_part_raffle .img_raffle img {
     position: absolute;
     max-width: 100%;
-    height: 100%;
+    height: auto;
     padding: 10px;
     left: 0;
     transition: all ease 800ms;
