@@ -1635,6 +1635,9 @@ a.full_link {
     object-fit: fill;
     z-index: 5;
 }
+.fn_cs_about_raffle .left_part_raffle .img_raffle:hover {
+    will-change: transform;
+}
 
 .fn_cs_about_raffle .left_part_raffle .img_raffle img {
     position: absolute;
